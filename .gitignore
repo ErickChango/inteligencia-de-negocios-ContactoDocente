@@ -7,6 +7,11 @@ postgres_data/
 *.tmp
 *.bak
 
+# Archivos de pruebas locales
+PRUEBAS.txt
+PENTAHO_PRUEBAS_DETALLADAS.txt
+*.xlsx
+
 # Sistema operativo
 .DS_Store
 Thumbs.db
