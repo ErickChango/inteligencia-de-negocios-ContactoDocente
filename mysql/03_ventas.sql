@@ -1,14 +1,14 @@
 -- =====================================================
--- PROCEDIMIENTO SIMPLIFICADO - Genera 500 ventas
+-- PROCEDIMIENTO - Genera 2000 ventas
 -- =====================================================
 
-USE operaciones_simple;
+USE operaciones;
 
 DELIMITER $$
 
-DROP PROCEDURE IF EXISTS generar_ventas_simple$$
+DROP PROCEDURE IF EXISTS generar_ventas$$
 
-CREATE PROCEDURE generar_ventas_simple()
+CREATE PROCEDURE generar_ventas()
 BEGIN
     DECLARE v_contador INT DEFAULT 1;
     DECLARE v_fecha DATE;
@@ -23,7 +23,7 @@ BEGIN
     DECLARE v_numero_factura VARCHAR(50);
     DECLARE v_venta_id INT;
     
-    WHILE v_contador <= 500 DO
+    WHILE v_contador <= 2000 DO
         -- Fecha aleatoria 2023-2025
         SET v_fecha = DATE_ADD('2023-01-01', INTERVAL FLOOR(RAND() * 1095) DAY);
         
@@ -95,7 +95,7 @@ END$$
 DELIMITER ;
 
 -- Ejecutar
-CALL generar_ventas_simple();
+CALL generar_ventas();
 
 -- Verificar
 SELECT 'Productos' as Tabla, COUNT(*) as Registros FROM Productos

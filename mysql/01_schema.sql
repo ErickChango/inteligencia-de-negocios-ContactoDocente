@@ -1,13 +1,12 @@
 -- =====================================================
--- PAPER SMART - VERSIÓN SIMPLIFICADA (5 TABLAS)
--- Base de Operaciones MySQL
+-- PAPER SMART - Base de Operaciones MySQL
 -- =====================================================
 
 SET NAMES utf8mb4;
 
-DROP DATABASE IF EXISTS operaciones_simple;
-CREATE DATABASE operaciones_simple;
-USE operaciones_simple;
+DROP DATABASE IF EXISTS operaciones;
+CREATE DATABASE operaciones;
+USE operaciones;
 
 -- TABLA 1: Productos
 CREATE TABLE Productos (

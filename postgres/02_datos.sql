@@ -1,8 +1,8 @@
 -- =====================================================
--- DATOS SIMPLIFICADOS - PostgreSQL
+-- DATOS - PostgreSQL
 -- =====================================================
 
-\c gestion_simple
+\c gestion
 
 -- SUCURSALES
 INSERT INTO Sucursales (codigo, nombre, ciudad, activa) VALUES

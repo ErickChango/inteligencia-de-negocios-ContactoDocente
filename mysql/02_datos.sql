@@ -1,8 +1,8 @@
 -- =====================================================
--- DATOS SIMPLIFICADOS - MySQL
+-- DATOS - MySQL
 -- =====================================================
 
-USE operaciones_simple;
+USE operaciones;
 
 -- PRODUCTOS (50 productos)
 INSERT INTO Productos (nombre, marca, categoria, precio_venta) VALUES

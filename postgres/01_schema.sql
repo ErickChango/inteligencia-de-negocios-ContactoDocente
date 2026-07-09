@@ -1,12 +1,11 @@
 -- =====================================================
--- PAPER SMART - VERSIÓN SIMPLIFICADA (5 TABLAS)
--- Base de Gestión PostgreSQL
+-- PAPER SMART - Base de Gestión PostgreSQL
 -- =====================================================
 
-DROP DATABASE IF EXISTS gestion_simple;
-CREATE DATABASE gestion_simple;
+DROP DATABASE IF EXISTS gestion;
+CREATE DATABASE gestion;
 
-\c gestion_simple
+\c gestion
 
 -- TABLA 1: Sucursales
 CREATE TABLE Sucursales (
