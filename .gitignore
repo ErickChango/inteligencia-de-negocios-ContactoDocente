@@ -1,0 +1,12 @@
+# Docker volumes y datos
+mysql_data/
+postgres_data/
+
+# Archivos temporales
+*.log
+*.tmp
+*.bak
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
